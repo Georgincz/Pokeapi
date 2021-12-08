@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>Pokeapi</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <form id="formPokemonId" action="" method="">
+
+                <div class="row">
+                    <div class="col-2 field">
+                        <label for="prvni-input">Jméno 1. pokémona</label><br>
+                        <input type="text" name="prvni-input" id="prvniInputId" placeholder="charizard" value=""><br>
+                        <small></small>
+                    </div>
+                    
+                    <div class="col-2 field">
+                        <label for="prvni-input">Jméno 2. pokémona</label><br>
+                        <input type="text" name="druhy-input" id="druhyInputId" placeholder="ditto" value=""><br>
+                        <small></small>
+                    </div>
+                </div>
+
+                <input type="submit" class="btn" value="Porovnat">
+                <a href="" class="btn btn-reset">Resetovat</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div id="vypisPrvniId" class="box">
+            <img id="imgPrvniId">
+            <h2 id="namePrvniId"></h2>
+            <p id="heightPrvniId"></p>
+            <p id="weightPrvniId"></p>
+            <p id="attackPrvniId"></p>
+            <p id="vitezPrvni"></p>
+        </div>
+    
+        <div id="vypisDruhyId" class="box">
+            <img id="imgDruhyId">
+            <h2 id="nameDruhyId"></h2>
+            <p id="heightDruhyId"></p>
+            <p id="weightDruhyId"></p>
+            <p id="attackDruhyId"></p>
+            <p id="vitezDruhy"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
