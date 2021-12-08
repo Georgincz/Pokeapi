@@ -89,7 +89,9 @@ form.addEventListener("submit", function (event) {
 
 		if (attackPoke1 > attackPoke2) {
 			document.getElementById("vypisPrvniId").classList.add('vitez');
+			document.getElementById("vypisDruhyId").classList.remove('vitez');
 		} else if (attackPoke1 < attackPoke2) {
+			document.getElementById("vypisPrvniId").classList.remove('vitez');
 			document.getElementById("vypisDruhyId").classList.add('vitez');
 		} else {
 			document.getElementById("vypisPrvniId").classList.add('vitez');
