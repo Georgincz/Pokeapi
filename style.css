@@ -18,7 +18,7 @@ body {
 .container {
     box-shadow: 0 21px 41px -13px rgb(0 0 0 / 18%);
     background: #fff;
-    padding: 48px;
+    padding: 30px 50px 50px 50px;
 }
 
 .row {
@@ -30,16 +30,17 @@ body {
 .col-2 {
     padding-right: 15px;
     padding-left: 15px;
+    padding-top: 15px;
 }
 
 .col-1 {
     padding-right: 15px;
     padding-left: 15px;
+    padding-top: 15px;
 }
 
 input {
     padding: 15px;
-    margin-top: 3px;
     height: 30px;
     background: #fff;
     color: #000;
@@ -64,6 +65,10 @@ input.error:focus, textarea.error:focus, select.error:focus {
     box-shadow: 0 0 0 0.25rem rgb(220 53 69 / 25%);
 }
 
+::placeholder {
+    color: #cfcfcf !important;
+}
+
 .field small {
     color: #dc3545;
 }
@@ -82,7 +87,7 @@ input.error:focus, textarea.error:focus, select.error:focus {
     -moz-box-shadow: 0 10px 20px -6px rgba(0,0,0,.12);
     box-shadow: 0 10px 20px -6px rgb(0 0 0 / 12%);
     position: relative;
-    margin: 20px 0;
+    margin: 15px 0 0;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
@@ -99,7 +104,6 @@ input.error:focus, textarea.error:focus, select.error:focus {
 
 .btn-reset {
     background: #b5b5b5 !important;
-    padding: 13px 20px 10px;
     text-decoration: none;
 }
 

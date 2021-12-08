@@ -100,3 +100,7 @@ form.addEventListener("submit", function (event) {
 	renderPoke();
 
 });
+
+function reset() {
+	location.reload();
+}
