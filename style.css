@@ -32,6 +32,11 @@ body {
     padding-left: 15px;
 }
 
+.col-1 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 input {
     padding: 15px;
     margin-top: 3px;
@@ -95,7 +100,6 @@ input.error:focus, textarea.error:focus, select.error:focus {
 .btn-reset {
     background: #b5b5b5 !important;
     padding: 13px 20px 10px;
-    margin-left: 5px;
     text-decoration: none;
 }
 
@@ -117,4 +121,31 @@ input.error:focus, textarea.error:focus, select.error:focus {
 .vitez {
     box-shadow: 0 21px 41px -13px rgb(220 0 0);
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .wrapper {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box {
+        margin: 20px 30px;
+    }
 }
